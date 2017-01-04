@@ -56,3 +56,9 @@ html,body{
         font-size: 3em;
     }
 }
+.saludo{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
