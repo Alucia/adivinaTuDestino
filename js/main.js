@@ -1,3 +1,5 @@
+var contenidoName;
+
 function Reloj() {
     var tiempo = new Date();
     var hora = tiempo.getHours();
@@ -32,63 +34,83 @@ function Reloj() {
 Reloj();
 
 function nameletra(){
-    var firstLetter = document.getElementById("name").value.charAt(0);
+    var text;
+    var contenidoName = document.getElementById("name").value;
+    var firstLetter = contenidoName.charAt(0);
     //convertir en mayuscula
     var letterUpper = firstLetter.toUpperCase();
+    
+    switch(letterUpper) {
+        case "A":
+        case "M":
+        case "Y":
+          text = "Tu destino te espera con buena fortuna, salud y mucha amistad";
+          break;
+        case "B":
+        case "N":
+        case "Z":
+          text = "Tendras un buen empleo acompañados con un alto sueldo";
+          break;
+        case "C":
+        case "O":
+          text = "Viviras hasta los 90 años de edad";
+          break;
+        case "D":
+        case "P":
+          text = "Tendras una familia numerosa";
+          break;
+        case "E":
+        case "Q":
+          text = "Te iras a vivir al extranjero";
+          break;
+        case "F":
+        case "R":
+          text = "Viviras en una mansión";
+          break;
+        case "G":
+        case "S":
+          text = "Seras un escritor famoso";
+          break;
+        case "H":
+        case "T":
+          text = "viajaras por todo el mundo";
+          break;
+        case "I":
+        case "U":
+          text = "Tu destino es ser un artista muy famaso";
+          break;
+        case "J":
+        case "V":
+          text = "Viviras por siempre en los corazones de quienes te conozcan";
+          break;
+        case "K":
+        case "W":
+          text = " Formaras una gran empresa en varias partes del Peru";
+          break;
+        case "L":
+        case "X":
+          text = "Heredaras una granja con muchos pollitos";
+          break;
+    }
+    document.getElementById("significadoName").innerHTML = text;
 
-  switch(letterUpper) {
-    case "A":
-    case "M":
-    case "Y":
-      text = "Tu destino te espera con buena fortuna, salud y mucha amistad";
-      break;
-    case "B":
-    case "N":
-    case "Z":
-      text = "Tendras un buen empleo acompañados con un alto sueldo";
-      break;
-    case "C":
-    case "O":
-      text = "Viviras hasta los 90 años de edad";
-      break;
-    case "D":
-    case "P":
-      text = "Tendras una familia numerosa";
-      break;
-    case "E":
-    case "Q":
-      text = "Te iras a vivir al extranjero, donde te casaras";
-      break;
-    case "F":
-    case "R":
-      text = "Viviras en una mansión";
-      break;
-    case "G":
-    case "S":
-      text = "Seras un escritor famoso";
-      break;
-    case "H":
-    case "T":
-      text = "viajaras por todo el mundo";
-      break;
-    case "I":
-    case "U":
-      text = "Tu destino es ser un artista muy famaso";
-      break;
-    case "J":
-    case "V":
-      text = "Viviras por siempre en los corazones de quienes te conozcan";
-      break;
-    case "K":
-    case "W":
-      text = "I am not a fan of orange.";
-      break;
-    case "L":
-    case "X":
-      text = "Heredaras una granja con muchos pollitos";
-      break;
-  }
-  document.getElementById("significadoName").innerHTML = text;
 }
-document.getElementById("btn").addEventListener("click", nameletra);
+    document.getElementById("btn").addEventListener("click", nameletra);
 
+function numbername(){
+    var contenidoName = document.getElementById("name").value;
+    var nroname = contenidoName.length;
+    if (nroname == 0){
+        document.getElementById("nroSignificado").innerHTML = "Ingresa tu nombre";
+    }else if (nroname <= 3) {
+        document.getElementById("nroSignificado").innerHTML = "Tienes un espiritu muy creativo";
+    }else if (nroname < 6) {
+        document.getElementById("nroSignificado").innerHTML = "Eres muy noble y caritativo";
+    }else if (nroname < 9) {
+        document.getElementById("nroSignificado").innerHTML = "Te gusta pasar tiempo con tu familia y amigos";
+    }else if (nroname < 12) {
+        document.getElementById("nroSignificado").innerHTML = "Tienes un aventurero, y ers unico";
+    }
+}
+
+    document.getElementById("btnNro").addEventListener("click", numbername);

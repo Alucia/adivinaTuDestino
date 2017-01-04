@@ -10,11 +10,21 @@
     <div class="content">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
-        <div class="body" style="width:500px;height: 500px; background: red;position:absolute; top: 5% ; left:35%;">
+        <div class="body" style="width:500px;height: 500px; rgba(24, 104, 136, 0.85);position:absolute; top: 5% ; left:33%;">
             <h3 class="saludo" id="mostrarSaludo"></h3>
-            <input id="name" type="text" placeholder="Ingresa tu Nombre">
-            <button id="btn"> Ver significado </button>
-            <label id="significadoName"></label>
+            <form style="margin-top: 24%;margin-left: 2%;">
+              <input id="name" type="text" placeholder="Ingresa tu Nombre" style="
+                  border-radius: 5px;
+                  padding: 2px;
+                  width: 300px;
+                  margin-bottom: 5px;
+              "><br>
+              <button id="btn" type="button"> Que significa tu nombre </button> <br>
+              <label id="significadoName"></label><br> <br>
+              <button id="btnNro" type="button"> Que significa tu nombre segun la numerologia de tu nombre</button> <br>
+              <label id="nroSignificado"></label>
+            </form>
+            
         </div>       
         <div class="content-reloj">
           <div class="inline" id='hora'></div>
