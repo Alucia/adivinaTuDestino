@@ -1,0 +1,13 @@
+/*Estilo del reloj*/
+ #reloj {
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: Arial, Verdana;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, black, red);
+    background: -moz-linear-gradient(left, black, red);
+    background: -o-linear-gradient(left, black, red);
+    background: linear-gradient(left, black, red);
+    box-shadow: 2px 2px 2px grey;
+    padding: 5px;
+}
