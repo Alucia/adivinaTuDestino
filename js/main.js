@@ -196,4 +196,14 @@ function lastnameletra(){
 
 document.getElementById("btnLastName").addEventListener("click", lastnameletra);
 
+function fechanac(){
+    var fechaingresada =  new Date(document.getElementById("fechanac").value);
+    var dia = fechaingresada.getDate();
+    var mes = fechaingresada.getMonth();
+    var anio = fechaingresada.getFullYear();
+    var nrosuerte = dia + mes + anio;
 
+    document.getElementById("significadoFechaNac").innerHTML = "Tu numero de la suerte es:" + " " + nrosuerte; 
+}
+
+document.getElementById("btnfechanac").addEventListener("click", fechanac);
