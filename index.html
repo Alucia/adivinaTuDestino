@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <title>Adivina Tu futuro</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
   <div class="demo-1">                
     <div class="content">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
-        <div class="body" style="width:500px;height: 500px; background: rgba(24, 104, 136, 0.85);position:absolute; top: 5% ; left:33%;border-radius: 7px;">
+        <div class="body" >
+            <h1>Que Significa Tu Nombre</h1>
             <h3 class="saludo" id="mostrarSaludo"></h3>
-            <form style="margin-top: 24%;margin-left: 2%;">
-              <input id="name" type="text" placeholder="Ingresa tu Nombre" style="
-                  border-radius: 5px;
-                  padding: 2px;
-                  width: 300px;
-                  margin-bottom: 5px;
-              "><br>
+            <form style="margin-top: 15%;margin-left: 2%;">
+              <input id="name" type="text" placeholder="Ingresa tu Nombre"><br>
               <button id="btn" type="button"> Que significa tu nombre </button> <br>
               <label id="significadoName"></label><br> <br>
               <button id="btnNro" type="button"> Que significa tu nombre segun la numerologia de tu nombre</button> <br>
               <label id="nroSignificado"></label>
+              <br>
+              <br>
+              <h2>¿Quieres saber mas sobre tu destino?</h2>
+              <button style="margin-left: 38%; margin-right:3%;">Si</button>
+              <button>No</button>
             </form>
             
         </div>       

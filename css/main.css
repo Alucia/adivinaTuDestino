@@ -3,6 +3,20 @@ html,body{
     height: 100%;
     margin: 0px;
     height: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+    width:500px;
+    height: 500px; 
+    background: rgba(24, 104, 136, 0.85);
+    position:absolute; 
+    top: 5% ; 
+    left:33%;
+    border-radius: 7px;
+}
+h1,
+h2{
+    text-align:center; color: #fff; text-decoration:underline;
 }
 /*Estilo del reloj*/
 .content-reloj {
@@ -61,4 +75,11 @@ html,body{
     position: absolute;
     top: 10%;
     left: 2%;
+}
+
+#name{
+    border-radius: 5px;
+    padding: 2px;
+    width: 300px;
+    margin-bottom: 5px;
 }
