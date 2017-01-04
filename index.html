@@ -12,21 +12,30 @@
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
         <div class="body" >
-            <h1>Que Significa Tu Nombre</h1>
-            <h3 class="saludo" id="mostrarSaludo"></h3>
-            <form style="margin-top: 15%;margin-left: 2%;">
-              <input id="name" type="text" placeholder="Ingresa tu Nombre"><br>
-              <button id="btn" type="button"> Que significa tu nombre </button> <br>
-              <label id="significadoName"></label><br> <br>
-              <button id="btnNro" type="button"> Que significa tu nombre segun la numerologia de tu nombre</button> <br>
-              <label id="nroSignificado"></label>
-              <br>
-              <br>
-              <h2>¿Quieres saber mas sobre tu destino?</h2>
-              <button style="margin-left: 38%; margin-right:3%;">Si</button>
-              <button>No</button>
-            </form>
-            
+          <h1>Que Significa Tu Nombre</h1>
+          <h3 class="saludo" id="mostrarSaludo"></h3>
+          <form style="margin-top: 15%;margin-left: 2%;">
+            <input id="name" type="text" placeholder="Ingresa tu Nombre"><br>
+            <button id="btn" type="button"> Que significa tu nombre </button> <br>
+            <label id="significadoName"></label><br> <br>
+            <button id="btnNro" type="button"> Que significa tu nombre segun la numerologia de tu nombre</button> <br>
+            <label id="nroSignificado"></label>
+            <br>
+            <br>
+          </form>  
+          <h2>¿Quieres saber mas sobre tu destino?</h2>
+          <button id="si" style="margin-left: 38%; margin-right:3%;">Si</button>
+          <button id="no">No</button>
+          <form id="formApellido" style="margin-top: 5%;margin-left: 2%;display:none;">
+            <input id="lastname" type="text" placeholder="Ingresa tu Apellido"><br>
+            <button id="btnLastName" type="button"> Que significa tu Apellido</button> <br>
+            <label id="significadoLastName"></label>
+            <br>
+            <br>
+          </form>  
+          <div id="bye" style="display:none;margin-left: 2%; color: #fff;">
+            Adios
+          </div>          
         </div>       
         <div class="content-reloj">
           <div class="inline" id='hora'></div>

@@ -39,12 +39,12 @@ function nameletra(){
     var firstLetter = contenidoName.charAt(0);
     //convertir en mayuscula
     var letterUpper = firstLetter.toUpperCase();
-    
+
     switch(letterUpper) {
         case "A":
         case "M":
         case "Y":
-          text = "Tu destino te espera con buena fortuna, salud y mucha amistad";
+          text = "Tu destino te espera mucha amistad";
           break;
         case "B":
         case "N":
@@ -91,6 +91,8 @@ function nameletra(){
         case "X":
           text = "Heredaras una granja con muchos pollitos";
           break;
+        default:
+          text = "Escribe tu nombre";
     }
     document.getElementById("significadoName").innerHTML = text;
 
@@ -114,3 +116,84 @@ function numbername(){
 }
 
     document.getElementById("btnNro").addEventListener("click", numbername);
+
+function showformapellido(){
+    document.getElementById("formApellido").style.display = "block";
+    document.getElementById("bye").style.display = "none";
+}
+function showadios(){
+    document.getElementById("bye").style.display = "block";
+    document.getElementById("formApellido").style.display = "none";
+}   
+    document.getElementById("si").addEventListener("click", showformapellido);
+    document.getElementById("no").addEventListener("click", showadios);
+
+function lastnameletra(){
+    
+    var text;
+    var contenidoName = document.getElementById("lastname").value;
+    var firstLetter = contenidoName.charAt(0);
+    //convertir en mayuscula
+    var letterUpper = firstLetter.toUpperCase();
+    
+    switch(letterUpper) {
+        case "A":
+        case "M":
+        case "Y":
+          text = "tu color de suerte es el verde";
+          break;
+        case "B":
+        case "N":
+        case "Z":
+          text = "Tu color de la suerte es el marron";
+          break;
+        case "C":
+        case "O":
+          text = "Tu color de la suerte es el purpura";
+          break;
+        case "D":
+        case "P":
+          text = "Tu color de la suerte es naranja";
+          break;
+        case "E":
+        case "Q":
+          text = "Tu color de la suerte es verde claro";
+          break;
+        case "F":
+        case "R":
+          text = "Tu color de la suerte es esmeralda";
+          break;
+        case "G":
+        case "S":
+          text = "Tu color de la suerte es el rosado";
+          break;
+        case "H":
+        case "T":
+          text = "Tu color de la suerte es el amarillo";
+          break;
+        case "I":
+        case "U":
+          text = "Tu color de la suerte es el rojo";
+          break;
+        case "J":
+        case "V":
+          text = "Tu color de la suerte es el plomo";
+          break;
+        case "K":
+        case "W":
+          text = "Tu color de la suerte es el crema";
+          break;
+        case "L":
+        case "X":
+          text = "Tu color de la suerte es el dorado";
+          break;
+        default:
+          text = "Escribe tu nombre";
+    }
+    document.getElementById("significadoLastName").innerHTML = text;
+
+}
+
+document.getElementById("btnLastName").addEventListener("click", lastnameletra);
+
+
